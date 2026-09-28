@@ -1,0 +1,234 @@
+# 🚗 Tyre Request Management – ServiceNow
+
+## 📌 Project Overview
+
+**Tyre Request Management** is a custom ServiceNow application designed to manage tyre-related requests efficiently.
+
+The application allows users to create and track tyre requests while providing controlled access to different users and groups through roles, ACLs, and automated business logic.
+
+This project demonstrates practical implementation of ServiceNow development concepts including:
+
+- Custom Tables
+- Users and User Groups
+- Roles
+- ACLs
+- Business Rules
+- Form and List configurations
+- Data validation
+- Access control
+- Request management
+- Update Sets
+
+---
+
+## 🎯 Project Objectives
+
+The main objectives of this project are:
+
+- Create a centralized system for managing tyre requests.
+- Allow authorized users to create and manage tyre requests.
+- Control access based on users, groups, and roles.
+- Implement business rules for automation and data validation.
+- Secure application data using ACLs.
+- Provide a structured workflow for handling tyre requests.
+- Package the application using a ServiceNow Update Set for deployment.
+
+---
+
+## 🗂️ Custom Tables
+
+### 1. Tyre Request
+
+The **Tyre Request** table stores information related to tyre requests.
+
+Example fields:
+
+- Request Number
+- Requested By
+- Tyre Type
+- Tyre Size
+- Quantity
+- Request Description
+- Assignment Group
+- Assigned To
+- State
+- Priority
+- Request Date
+- Comments
+
+### 2. User / User Group Configuration
+
+Users and groups are configured to control who can create, view, update, and manage tyre requests.
+
+---
+
+## 👥 Users, Groups & Roles
+
+The application includes custom user/group configurations to provide role-based access.
+
+Example roles:
+
+- Tyre Request User
+- Tyre Request Agent
+- Tyre Request Manager
+- Tyre Request Admin
+
+Permissions are assigned based on the user's role and responsibilities.
+
+---
+
+## 🔐 Access Control Lists (ACLs)
+
+ACLs are implemented to protect application data and restrict unauthorized access.
+
+ACLs are used to control:
+
+- Table access
+- Record access
+- Field access
+- Create permissions
+- Read permissions
+- Write permissions
+- Delete permissions
+
+Example:
+
+> Only authorized users with the appropriate role can update or delete tyre request records.
+
+---
+
+## ⚙️ Business Rules
+
+Business Rules are implemented to automate processes and enforce business logic.
+
+Examples of implemented logic:
+
+- Validate tyre request information.
+- Automatically assign requests to appropriate groups.
+- Prevent unauthorized record deletion.
+- Update request information based on conditions.
+- Enforce required business conditions before saving records.
+
+---
+
+## 🔄 Request Management
+
+The application follows a structured process:
+
+User creates Tyre Request
+        ↓
+Request Validation
+        ↓
+Assignment Group
+        ↓
+Assigned To
+        ↓
+Request Processing
+        ↓
+Request Completion
+
+---
+
+## 🛡️ Security
+
+Security is implemented using:
+
+- Roles
+- ACLs
+- User Groups
+- Record-level access
+- Field-level access
+- Business Rules
+
+This ensures that users can only perform actions permitted by their assigned roles.
+
+---
+
+## 📦 Deployment
+
+The complete ServiceNow configuration has been captured in a **ServiceNow Update Set**.
+
+### Importing the Update Set
+
+1. Log in to the target ServiceNow instance.
+2. Navigate to:
+
+   `System Update Sets → Retrieved Update Sets`
+
+3. Upload/import the provided Update Set.
+4. Open the Update Set.
+5. Review the captured configuration.
+6. Click **Preview Update Set**.
+7. Resolve any preview errors.
+8. Click **Commit Update Set**.
+9. Verify the application, tables, roles, ACLs, Business Rules, and other configurations.
+
+---
+
+## 📁 Project Contents
+
+The repository contains:
+
+- 📦 ServiceNow Update Set
+- 📄 Project Documentation
+- 📖 README
+- ⚙️ Configuration details
+
+---
+
+## 🧠 ServiceNow Concepts Demonstrated
+
+This project demonstrates practical knowledge of:
+
+- ServiceNow Tables
+- Table Relationships
+- Dictionary / Fields
+- Forms
+- Lists
+- Users
+- Groups
+- Roles
+- ACLs
+- Business Rules
+- Data Validation
+- Assignment Groups
+- Role-Based Access Control
+- Update Sets
+- Application Development
+
+---
+
+## 🚀 Future Enhancements
+
+Possible future enhancements include:
+
+- Service Catalog integration
+- Flow Designer automation
+- Notifications
+- Approval workflow
+- Email notifications
+- SLA configuration
+- Reports and dashboards
+- Performance Analytics
+- Integration with external tyre inventory systems
+
+---
+
+## 👩‍💻 Author
+
+**Rani Mahadev Pujari**
+
+ServiceNow Developer | Data & AI Enthusiast
+
+---
+
+## 📌 Project Status
+
+✅ Custom application created  
+✅ Custom tables configured  
+✅ Users and groups configured  
+✅ Roles created  
+✅ ACLs implemented  
+✅ Business Rules implemented  
+✅ Update Set created  
+✅ Update Set uploaded to repository
